@@ -57,7 +57,7 @@ g++ -O2 tex-injector.cpp -o tex-injector
 
 And then run it using this command.
 ```
-cat test-file.md | ./tex-injector test-template.tex
+cat test.md | ./tex-injector test-template.tex
 ```
 
 ## Oh no! I can't compile my LaTeX file, what's wrong?
