@@ -1,0 +1,53 @@
+\documentclass{article}
+
+\usepackage{amssymb}
+\usepackage{soul}
+\usepackage{hyperref}
+
+\title{Testing Markdown to \LaTeX\ parsing using LaMark}
+\author{Apan Trikha}
+
+\begin{document}
+\section{This is the heading of the test file called test.md}
+Some text in the paragraph to show you the abilities of this parser. \textbf{Some bold text here,} \textit{some italic text here} and \st{some text I want to cross out}.
+
+Another paragraph for the fun, meanwhile you can go to \href{https://pixeltrik.vercel.app/}{my website} about \href{https://pixeltrik.vercel.app/blogs/on-most-people-teaching-unix}{what I learned from UNIX}.
+
+\subsection{Sub heading for no reason}
+\subsubsection{Subsub heading again for no context}
+Just adding text for the sake of adding. And also for showing the \textit{\textbf{bold italic combination}} too.
+
+\section{Lists}
+This is unordered list and need to add a blank line to start it.
+
+\begin{itemize}
+	\item Item 1
+	\item Item 2
+	\item Item 3
+\end{itemize}
+
+Ordered list with same complaints
+
+\begin{enumerate}
+	\item Item 1
+	\item Item 2
+	\item Item 3
+\end{enumerate}
+
+Checklist with same complaints
+
+\begin{itemize}
+	\item[$\square$]  It's something I was supposed to do.
+	\item[$\boxtimes$]  Oh! I did something I don't remember.
+\end{itemize}
+
+\section{Code Block Demonstration}
+\begin{verbatim}
+#include <iostream>
+using namespace std;
+int main() {
+        cout << "Hello, World!" << endl;
+        return 0;
+    }
+\end{verbatim}
+\end{document}
